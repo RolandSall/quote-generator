@@ -1,0 +1,12 @@
+version: '3.2'
+services:
+  db:
+    container_name: quotedb
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: quote_db
+    ports:
+      - "5432:5432"
